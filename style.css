@@ -193,3 +193,54 @@ nav ul li a:hover {
   font-size: 1.2rem;
   flex-shrink: 0;
 }
+
+/* tabla para los precios */
+.seccion-paquetes {
+  background: white;
+  padding: 64px 40px;
+}
+
+
+.tabla-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+}
+
+.tabla-paquetes {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+/*encabezado*/
+.tabla-paquetes thead th {
+  background: var(--color-principal);
+  color: white;
+  padding: 16px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.tabla-paquetes thead th:first-child { border-radius: var(--radio) 0 0 0; }
+.tabla-paquetes thead th:last-child  { border-radius: 0 var(--radio) 0 0; }
+
+.tabla-paquetes tbody td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0e8e8;
+  color: var(--color-oscuro);
+}
+
+
+.tabla-paquetes tbody tr:nth-child(even) td {
+  background: #fff5f7;
+}
+
+.precio {
+  color: var(--color-principal);
+  font-weight: 700;
+  font-size: 1rem;
+}
