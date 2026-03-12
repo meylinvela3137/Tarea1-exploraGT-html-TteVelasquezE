@@ -1,0 +1,82 @@
+
+:root {
+  --color-principal: #e8305a;   
+  --color-hover: #c0254a;       
+  --color-oscuro: #1a1a2e;     
+  --color-fondo: #f8f4f0;    
+  --color-blanco: #ffffff;
+  --fuente-titulo: 'Playfair Display', serif;   
+  --fuente-cuerpo: 'Nunito', sans-serif;       
+  --sombra: 0 4px 24px rgba(0,0,0,0.10);
+  --radio: 12px;               
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-oscuro);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--color-principal);
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(232,48,90,0.18);
+}
+
+.logo {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+nav { margin-left: auto; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+nav ul li a {
+  color: rgba(255,255,255,0.90);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+  background: rgba(255,255,255,0.18);
+  color: white;
+}
+
+.hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
